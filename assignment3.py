@@ -22,3 +22,23 @@ rate: 5%
 10 years
 final balance: 1320.68
 """
+
+V = 0
+B = 0
+P = int(input("enter your annual investment: "))
+r = int(input("enter your annual interest rate as a percentage: "))
+r2 = r/100
+t = int(input("enter the length of the investment in years: "))
+
+while V != t:
+    B += P
+    B *= (1 +r2)
+    print(f"{B:.2f}")
+    V = V+1
+    
+    
+    
+    
+    
+    
+    

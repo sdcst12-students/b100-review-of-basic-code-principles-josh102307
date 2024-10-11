@@ -13,3 +13,14 @@ Your program should ask the user for
 * The program will calculate the amount of interest earned and display it.
 * Appropriate formatting of the output is a requirement for this assignment
 """
+
+import math
+
+principal = float(input("enter initial investment: "))
+rate = float(input("enter annual interest rate as a percentage: "))
+rate2 = rate/100
+time = float(input("enter length of investment in years: "))
+interest = principal*rate2*time
+futurevalue = principal + interest
+print(f"your interest after {time} years at {rate}% is {interest}")
+print(f"your future value after {time} years at {rate}% is {futurevalue}")
